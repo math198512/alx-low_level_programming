@@ -21,10 +21,11 @@ int main(void)
 				for (l = j; l <= '9'; l++)
 				{
 
-					if (i == k && j == l)
-					{
-						continue;
-					}		
+					/** if (i == k && j == l && e && )
+					 *{
+					 *	continue;
+					 *}
+					 */		
 					putchar(i);
 					putchar(j);
 					putchar(' ');
