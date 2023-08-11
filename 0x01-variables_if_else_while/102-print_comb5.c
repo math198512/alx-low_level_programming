@@ -25,8 +25,7 @@ int main(void)
 					{
 						if (j <= l)
 						{
-							if (i != k || j != l)
-							{
+						
 								putchar(i);
 								putchar(j);
 								putchar(' ');
@@ -38,7 +37,7 @@ int main(void)
 								}
 								putchar(',');
 								putchar(' ');
-							}
+							
 						}	
 					}
 				}
