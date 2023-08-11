@@ -17,25 +17,23 @@ int main(void)
 	{
 		i = a / 10;
 		j = a % 10;
-
 		for (b = 0; b <= 99 ; b++)
 		{
 			k = b / 10;
 			l = b % 10;
-				
 			if (i < k || (i == k && j < l))
 			{
-					putchar(i + '0');
-					putchar(j + '0');
-					putchar(' ');
-					putchar(k + '0');
-					putchar(l + '0');
-					if (i == 9 && j == 8)
-					{
-						break;
-					}
-					putchar(',');
-					putchar(' ');
+				putchar(i + '0');
+				putchar(j + '0');
+				putchar(' ');
+				putchar(k + '0');
+				putchar(l + '0');
+				if (i == 9 && j == 8)
+				{
+					break;
+				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
