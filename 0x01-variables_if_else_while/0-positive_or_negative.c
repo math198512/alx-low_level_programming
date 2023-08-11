@@ -10,15 +10,12 @@
 int main(void)
 {
 	int n;
+	char *a;
+	char *b;
+	char *c;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	char *a;
-
-	char *b;
-
-	char *c;
-
 	a = "is positive";
 	b = "is zero";
 	c = "is negative";
