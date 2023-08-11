@@ -12,7 +12,11 @@ int main(void)
 	int n;
 
 	srand(time(0));
-	n = rand() - RAND_MAX / 2;	
-	printf("%d %s\n", n, (n > 0 ? "is positive" : (n == 0 ? "is zero" : "is negative")));
+	n = rand() - RAND_MAX / 2;
+	char *a = "is positive";
+	char *b = "is zero";
+	char *c = "is negative";
+
+	printf("%d %s\n", n, n > 0 ? a : (n == 0 ? b : c));
 	return (0);
 }
