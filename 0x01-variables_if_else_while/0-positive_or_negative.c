@@ -14,12 +14,12 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	char *a;
-	a= "is positive";
 	char *b;
-       	b = "is zero";
-	char *c; 
-	c = "is negative";
+	char *c;
 
+	a = "is positive";
+	b = "is zero";
+	c = "is negative";
 	printf("%d %s\n", n, n > 0 ? a : (n == 0 ? b : c));
 	return (0);
 }
