@@ -18,25 +18,28 @@ int main(void)
 		{
 			for (k = '0'; k <= '9'; k++)
 			{
-				for (l = '1'; l <='9'; l++)
+				for (l = '0'; l <='9'; l++)
 				{
 
 					if (i <= k)
 					{
-						if (j < l)
+						if (j <= l)
 						{
-							putchar(i);
-							putchar(j);
-							putchar(' ');
-							putchar(k);
-							putchar(l);
-							if (i == '9' && j == '8')
+							if (i != k || j != l)
 							{
-								break;
+								putchar(i);
+								putchar(j);
+								putchar(' ');
+								putchar(k);
+								putchar(l);
+								if (i == '9' && j == '8')
+								{
+									break;
+								}
+								putchar(',');
+								putchar(' ');
 							}
-							putchar(',');
-							putchar(' ');
-						}
+						}	
 					}
 				}
 			}
