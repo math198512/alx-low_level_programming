@@ -23,17 +23,12 @@ void jack_bauer(void)
 			 *  if (i <= k || (i == k && j < l))
 			 *  {
 			 */
-
-                                _putchar(i + '0');
-                                _putchar(j + '0');
-                                _putchar(':');
-                                _putchar(k + '0');
-                                _putchar(l + '0');
-                                if (i == 9 && j == 8)
-                                {
-                                        break;
-                                }
-                                _putchar('\n');
+			_putchar(i + '0');
+			_putchar(j + '0');
+			_putchar(':');
+			_putchar(k + '0');
+			_putchar(l + '0');
+			_putchar('\n');
                         
                 }
         }
