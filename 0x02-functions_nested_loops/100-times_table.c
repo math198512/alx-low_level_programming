@@ -29,7 +29,7 @@ void print_times_table(int n)
 				_putchar(' ');
 				_putchar(p + '0');
 			}
-			else if (p >= 10 && p < 100 )
+			else if (p >= 10 && p < 100)
 			{
 				d = p / 10;
 				o = p % 10;
@@ -38,15 +38,15 @@ void print_times_table(int n)
 				_putchar(d + '0');
 				_putchar(o + '0');
 			}
-			else
+			else if (p >= 100)
 			{
 				h = p / 100;
-				d = p / 10;
-                                o = p % 10;
-                                _putchar(' ');
-                                _putchar(h + '0');
-                                _putchar(d + '0');
-                                _putchar(o + '0');
+				d = (p - h * 100) / 10;
+				o = p % 10;
+				_putchar(' ');
+				_putchar(h + '0');
+				_putchar(d + '0');
+				_putchar(o + '0');
 			}
 			if (i != n)
 			{
