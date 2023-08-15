@@ -16,10 +16,10 @@ void jack_bauer(void)
 		i = a / 10;
 		j = a % 10;
 		for (b = 0; b <= 59 ; b++)
-                {
-                        k = b / 10;
-                        l = b % 10;
-                        /**
+		{
+			k = b / 10;
+			l = b % 10;
+			/**
 			 *  if (i <= k || (i == k && j < l))
 			 *  {
 			 */
@@ -29,7 +29,6 @@ void jack_bauer(void)
 			_putchar(k + '0');
 			_putchar(l + '0');
 			_putchar('\n');
-                        
-                }
-        }
+			}
+	}
 }
