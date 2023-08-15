@@ -19,8 +19,11 @@ void jack_bauer(void)
                 {
                         k = b / 10;
                         l = b % 10;
-                        if (i <= k || (i == k && j < l))
-                        {
+                        /**
+			 *  if (i <= k || (i == k && j < l))
+			 *  {
+			 */
+
                                 _putchar(i + '0');
                                 _putchar(j + '0');
                                 _putchar(':');
@@ -31,7 +34,7 @@ void jack_bauer(void)
                                         break;
                                 }
                                 _putchar('\n');
-                        }
+                        
                 }
         }
 }
