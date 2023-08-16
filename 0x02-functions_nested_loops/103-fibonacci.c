@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int i, j;
+	int i;
 	long int fib_n, fib_n_1, fib, s;
 
 	fib_n = 2;
