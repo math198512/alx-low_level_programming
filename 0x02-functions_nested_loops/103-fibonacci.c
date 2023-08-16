@@ -9,6 +9,7 @@ int main(void)
 	int i;
 	long int fib_n, fib_n_1, fib, s;
 
+	s = 2;
 	fib_n = 2;
 	fib_n_1 = 1;
 	for (i = 0 ; i <= 48; i++)
