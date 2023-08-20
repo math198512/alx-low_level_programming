@@ -6,7 +6,7 @@
  * and for the multiples of five print Buzz. For numbers 
  * which are multiples of both three and five print FizzBuzz
  *
- * Return: nothing.
+ * Return: 0.
  */
 int main(void)
 {
@@ -32,4 +32,5 @@ int main(void)
 		}
 	}
 	putchar('\n');
+	return (0);
 }
