@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strlen - swaps the values of two integers.
+ * _strlen - returns the length of a string.
  * @s: string pointer.
  * Return: nothing.
 */
