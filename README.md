@@ -1,1 +1,1 @@
-# Alx Low Level Programming.
+# 0x05. C - Pointers, arrays and strings
