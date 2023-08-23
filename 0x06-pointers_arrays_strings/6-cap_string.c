@@ -14,7 +14,7 @@ char *cap_string(char *str)
 	{
 		i++;
 	}
-	for (j = 0; j < i; j++)
+	for (j = 1; j < i; j++)
 	{
 		if ((str[j - 1] == ' ' ||
 				str[j - 1] == '\t' ||
