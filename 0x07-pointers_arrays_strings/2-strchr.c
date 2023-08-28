@@ -24,6 +24,6 @@ char *_strchr(char *s, char c)
 	if (t != 0)
 		s = s + i;
 	else
-		s = NULL;
+		s = '\0';
 	return (s);
 }
