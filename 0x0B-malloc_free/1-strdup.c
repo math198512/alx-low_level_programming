@@ -29,5 +29,6 @@ char *_strdup(char *str)
 	{
 		array[i] = str[i];
 	}
+	array[index] = '\0';
 	return (array);
 }
