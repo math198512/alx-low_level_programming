@@ -22,9 +22,9 @@ char *str_concat(char *s1, char *s2)
 		s1 = "";
 	}
 	if (s2 ==  NULL)
-        {
-                s2 = "";
-        }
+	{
+		s2 = "";
+	}
 	for (j = 0; s1[j] != '\0'; j++)
 	{
 		index++;
