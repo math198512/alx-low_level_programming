@@ -17,10 +17,14 @@ char *str_concat(char *s1, char *s2)
 	int i, j, k, l, index;
 
 	index = 0;
-	if (s1 == NULL || s2 ==  NULL)
+	if (s1 == NULL)
 	{
-		return (NULL);
+		s1 = "";
 	}
+	if (s2 ==  NULL)
+        {
+                s2 = "";
+        }
 	for (j = 0; s1[j] != '\0'; j++)
 	{
 		index++;
