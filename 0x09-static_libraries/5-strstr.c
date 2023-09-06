@@ -1,22 +1,21 @@
 #include "main.h"
-
 /**
- * _strstr - .finds the first occurrence of the
- * substring needle in the string haystack.
- * @haystack: input string.
- * @needle: bytes string to look for.
- * Return: pointer to the beginning of the located substring,
- * or NULL if the substring is not found.
- */
+*_strstr - The _strstr() function finds the first occurrence
+* of the substring needle in the string haystack.
+* The terminating null bytes (\0) are not compared
+*@haystack: string where the search is made
+*@needle: string whose occurence is searched in haystack
+*Return:Returns a pointer to the beginning of the located
+* substring, or NULL if the substring is not found.
+*/
 
 char *_strstr(char *haystack, char *needle)
 {
 	int i;
 
 	if (*needle == 0)
-	{
 		return (haystack);
-	}
+
 	while (*haystack)
 	{
 		i = 0;
@@ -29,8 +28,7 @@ char *_strstr(char *haystack, char *needle)
 				i++;
 			} while (haystack[i] == needle[i]);
 		}
-		haystack = haystack + 1;
+		haystack++;
 	}
 	return ('\0');
 }
-
