@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * string_nconcat - concatenates two strings.
@@ -7,16 +8,14 @@
  * @s2: size of the memory to be allocated.
  * @n: size of the memory to be allocated.
  *
- * Return: pointer to the address of the memory block or
- * exit(98) if function fails.
+ * Return: a pointer to a newly allocated space in memory.
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *array;
-	unsigned int i, j, l, index;
+	unsigned int i, j, l, k;
 
-	index = n;
 	if (s1 == NULL)
 	{
 		s1 = "";
@@ -27,21 +26,25 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	for (j = 0; s1[j] != '\0'; j++)
 	{
-		index++;
+		;
 	}
-	array = malloc(sizeof(char) * (index + 1));
+	for (k = 0; s2[k] != '\0'; k++)
+	{
+		;
+	}
+	array = malloc(sizeof(char) * (j + n + 1));
 	if (array == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; s1[i] != '\0'; i++)
+	for (i = 0; i < j; i++)
 	{
 		array[i] = s1[i];
 	}
-	for (l = 0; s2[l] != '\0' && l < n; l++)
+	for (l = 0; l < n; l++)
 	{
 		array[l + i] = s2[l];
 	}
-	array[index] = '\0';
+	array[i + l] = '\0';
 	return (array);
 }
