@@ -1,25 +1,19 @@
+#include <stdio.h>
 #include "lists.h"
-
 /**
- * dlistint_len - returns the number of elements.
- * @h: pointer to the head of the list
+ * dlistint_len - returns number of elements in a linked.
+ * @h: head of list
  *
- * Return: number of nodes
+ * Return: number of elements
  */
-
-
 size_t dlistint_len(const dlistint_t *h)
 {
-	int counter = 0;
-
-	if (h == NULL)
-		return (counter);
+	size_t i = 0;
 
 	while (h != NULL)
 	{
 		h = h->next;
-		counter++;
+		i++;
 	}
-
-	return (counter);
+	return (i);
 }
