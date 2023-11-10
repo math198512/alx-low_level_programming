@@ -6,17 +6,20 @@
  * @index: node index to return
  * Return: node at index given or NULL if node does not exist
  */
+
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-	unsigned int counter;
+	dlistint_t *current;
+	unsigned int i;
 
-	counter = 0;
-	while (head)
+	current = head;
+	i = 0;
+	while (current != NULL)
 	{
-		if (counter == index)
-			return (head);
-		head = head->next;
-		counter++;
+		if (i == index)
+			return (current);
+		current = current->next;
+		i++;
 	}
 	return (NULL);
 }
