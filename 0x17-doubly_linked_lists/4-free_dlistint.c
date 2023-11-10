@@ -11,14 +11,10 @@ void free_dlistint(dlistint_t *head)
 	temp = head;
 	if (temp == NULL)
 		return;
-	else
+	while(temp)
 	{
-		while(temp->next)
-		{
-			memo = temp;
-			temp = temp->next;
-			free(memo);
-		}
-		
+		memo = temp;
+		temp = temp->next;
+		free(memo);
 	}
 }
